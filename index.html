@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css"/>
+  </head>
+<body>
+  <div>
+  <div class="d-flex w-75"style="height: 80px;">
+    <span>Calculator</span>
+  </div>
+  <input id="display" class="d-flex w-75 border border-dark justify-content-end" style="height: 80px;"/>
+  <div class="d-flex flex-row">
+    <h6 class="d-flex p-2 mx-4">M+</h6>
+    <h6 class="d-flex p-2 mx-4">M_</h6>
+    <h6 class="d-flex p-2 mx-4">MC</h6>
+  </div>
+  <main class=" new d-flex  w-75 flex-flow">
+    <button id="ce" class=" p-2 bd-highlight mx-2 my-2 w-75 bg-light"style="height: 50px;" >%</button>
+    <button id="C" class=" p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >CE</button>
+    <button id="gen" class=" p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >C</button>
+    <button id="del" onclick="clearDisplay()" class=" p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >Delete</button>
+  </main>
+   <main class=" new d-flex  w-75 flex-flow">
+    <button id="nin" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >9</button>
+    <button id="eig" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >8</button>
+    <button id="sev" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >7</button>
+    <button id="mul" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >*</button>
+  </main>
+  <main class=" new d-flex w-75 p-2 flex-flow">
+    <button id="six" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >6</button>
+    <button id="fiv" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >5</button>
+    <button id="fou" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >4</button>
+    <button id="minus" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >-</button>
+  </main>
+  <main class=" new d-flex w-75 p-2 flex-flow">
+    <button id="three" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >3</button>
+    <button id="two" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >2</button>
+    <button id="one" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >1</button>
+    <button id="plu" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >+</button>
+  </main>
+  <main class=" new d-flex w-75 p-2 flex-flow">
+    <button id="zero" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >00</button>
+    <button id="zeros" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >0</button>
+    <button id="dot" class="btn p-2 bd-highlight mx-2 w-75 bg-light"style="height: 50px;" >.</button>
+    <button id="equ" onclick="calculateResult()" class="btn p-2 bd-highlight mx-2 w-75 bg-primary"style="height: 50px;" >= </button>
+  </main>
+  </div>
+    <script src="task.js"></script>
+</body>
+</html>
